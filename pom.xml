@@ -22,10 +22,13 @@
     </repositories>
 
     <dependencies>
+        <!-- Targets a stable, well-established PaperMC API version. Paper
+             servers stay backward-compatible, so a plugin built against
+             this version still runs fine on a newer server. -->
         <dependency>
             <groupId>io.papermc.paper</groupId>
             <artifactId>paper-api</artifactId>
-            <version>1.21-R0.1-SNAPSHOT</version>
+            <version>1.20.4-R0.1-SNAPSHOT</version>
             <scope>provided</scope>
         </dependency>
     </dependencies>
