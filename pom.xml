@@ -22,15 +22,10 @@
     </repositories>
 
     <dependencies>
-        <!-- Targets Minecraft/PaperMC version 26.2 (as shown on the Aternos
-             server's Software page). If the build fails because this exact
-             artifact version isn't published, check
-             https://repo.papermc.io/service/rest/repository/browse/maven-public/io/papermc/paper/paper-api/
-             for the closest available version string and swap it in below. -->
         <dependency>
             <groupId>io.papermc.paper</groupId>
             <artifactId>paper-api</artifactId>
-            <version>26.2-R0.1-SNAPSHOT</version>
+            <version>26.2.build.112-stable</version>
             <scope>provided</scope>
         </dependency>
     </dependencies>
