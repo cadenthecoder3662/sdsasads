@@ -1,7 +1,7 @@
 name: YTBlocks
 version: 1.0.0
 main: com.caden.ytblocks.YTBlocksPlugin
-api-version: '26.2'
+api-version: '1.21'
 author: caden
 description: Removes blocks from a defined region based on YouTube views, likes, and subscriber growth.
 commands:
