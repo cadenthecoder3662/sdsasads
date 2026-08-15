@@ -1,0 +1,48 @@
+# ============================================
+# YTBlocks configuration
+# Edit these values, then restart the server (or run /ytblocks reload)
+# ============================================
+
+youtube:
+  # Your YouTube Data API v3 key (from Google Cloud Console)
+  api-key: "PUT_YOUR_API_KEY_HERE"
+
+  # The video ID from the video's URL (the part after v=)
+  video-id: "zPXlDFxJ1Ek"
+
+  # Your channel handle, including the @ symbol
+  channel-handle: "@cadenyt3662"
+
+# How many blocks get removed per unit of growth
+points:
+  per-view: 1
+  per-like: 10
+  per-sub: 50
+
+# How often (in seconds) the plugin checks YouTube for updated stats.
+# Don't set this too low - YouTube's API has a daily usage quota.
+poll-interval-seconds: 60
+
+# The play area. The plugin automatically sets an in-game world border to
+# match this, so players can't wander outside it - no manual commands needed.
+# Blocks only ever get removed from inside this same area.
+region:
+  world: "world"
+  center-x: 0
+  center-z: 0
+  size: 500          # 500x500 square, centered on center-x/center-z
+  y-min: -64         # lowest Y level blocks will be removed from
+  y-max: 100         # highest Y level blocks will be removed from
+  # Block types that never get removed, even if encountered (protects
+  # against lava/water spilling everywhere, and skips unbreakable bedrock).
+  ignore-blocks:
+    - "BEDROCK"
+    - "WATER"
+    - "LAVA"
+    - "BARRIER"
+
+# Safety cap: max number of block positions checked in a single pass, so a
+# big burst of views/likes/subs after time offline can't cause a lag spike.
+# Any remaining "owed" block removals carry over and get processed on
+# following checks.
+max-scan-per-check: 20000

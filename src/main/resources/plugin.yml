@@ -1,0 +1,15 @@
+name: YTBlocks
+version: 1.0.0
+main: com.caden.ytblocks.YTBlocksPlugin
+api-version: '26.2'
+author: caden
+description: Removes blocks from a defined region based on YouTube views, likes, and subscriber growth.
+commands:
+  ytblocks:
+    description: Check status or reload the YTBlocks plugin
+    usage: /ytblocks <status|reload>
+    permission: ytblocks.admin
+    permission-message: You do not have permission to use this command.
+permissions:
+  ytblocks.admin:
+    default: op
